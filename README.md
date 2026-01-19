@@ -1,7 +1,7 @@
 # dotfiles
 Custom dotfiles managed with toml-bombadil
 
-cd Documents/dotfiles
+cd Documents
 
 git clone https://github.com/hunterzero99/dotfiles
 

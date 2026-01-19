@@ -1,0 +1,39 @@
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/crdaley/.zshrc'
+
+autoload -Uz compinit promptinit
+compinit
+promptinit
+prompt fade magenta
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+# End of lines configured by zsh-newuser-install
+
+# from ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias lsusb='cyme'
+
+# Added by user:
+bindkey "^[[3~" delete-char
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey '^[[Z' reverse-menu-complete
+bindkey '^H' backward-kill-word
+bindkey '^[[3;5~' kill-word
+bindkey "^[[5~" up-line-or-search
+bindkey "^[[6~" down-line-or-search
+# autocompletion with an arrow-key driven interface
+zstyle ':completion:*' menu select
+# autocompletion of privileged environments in privileged commands
+zstyle ':completion::complete:*' gain-privileges 1
+zstyle ":completion:*:commands" rehash 1

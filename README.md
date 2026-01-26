@@ -1,10 +1,10 @@
 # dotfiles
 Custom dotfiles managed with toml-bombadil
 
-cd Documents
+cd ~/Documents
 
 git clone https://github.com/hunterzero99/dotfiles
 
-bombadil install Documents/dotfiles/
+bombadil install ~/Documents/dotfiles/
 
 bombadil link
